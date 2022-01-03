@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/view.js"></script>
+</head>
+<body>
+    <div>
+        <div id="Instructions">
+        <p>Welcome to the Collision World!!!
+        <ul>
+            <li>From the "Type of Ball/Fish" DropDown select the type of Object</li>
+            <li>Post that select the required behavior from the "Ball/Fish Behavior" Dropdown</li>
+            <li>"*" Marked behaviors are not applicable for Fish type</li>
+            <li>You can select the appropriate Behavior as per your liking (It is Random by default)</li>
+            <ol>
+                <li>Vertical,Horizontal and Diagonal --> Straight Line</li>
+                <li>Rotating --> Object will rotate in circular Path.</li>
+                <li>Magic --> Supernatural Fish/Ball, can go anywhere (Fish Straight outta Aquaman)</li>
+                <li>Lazy --> Just like humans Ball/Fish are also Lazy, they stop working after some time</li>
+                <li>Breathing --> These Ball/Fish breath pretty heavy</li>
+                <li>Idle --> Who doesn't like sitting idle, if humans can why not Ball/Fish</li>
+                <li>Colorful --> These Balls change color </li>
+                <li>Gravity --> Ohh...these are interesting ones, trying to escape the right wall's force of attraction , if their velocity is enough they'll escape otherwise slowly right wall will swallow them</li>
+                <li>ColorFul and Breathing </li>
+                <li>Rotating and Breathing </li>
+                <li>Lazy and Breathing</li>
+                <li>Gravity and Breathing</li>
+            </ol>
+        <li>Then you can select the appropriate Collision Strategy for Balls(It is Random by default)</li>
+        <ol>
+            <li>Color --> These Balls spread colors, as one ball passes over other both change color</li>
+            <li>Normal --> These Balls don't like each other, they change direction (take opp.)after collision (Kinda like the collision with a wall)</li>
+            <li>Movement --> After Collision the movement Strategy gets changed for Balls</li>
+            <li>Velocity --> Increase the Velocity of One and Decrease the Velocity of one, but no direction change</li>
+            <li>Eating --> These are the dangerous ones, they'll eat the ball which are smaller than them but after eating there size decreases</li>
+            <li>Normal and Gravity ---> These Balls push the other in the Gravity web of the left wall after the collision</li>
+            <li>Normal and Breathing --->The Balls which collide start to show the Breathing behavior</li>
+            <li>Rock --> These are the chill ones, you collide with them nothing will happen. They'll stand the ground just like a rock</li>
+            <li>Magic --> After Colliding with this Ball, you can end up anywhere in the canvas (I don't know where) </li>
+            <li>Normal and Color</li>
+            <li>Normal and Velocity</li>
+        </ol>
+        <li>While creating a Ball/Fish you can select the Switchable behavior using the radio button (By default all are non-switchable)</li>
+        <li>Then you Switch the Strategy by clicking on "Switch Strategy" Button</li>
+        <li>While creating a Ball/Fish you can select the Removable behavior using the radio button (By default all are non-removable)</li>
+        <li>Then you remove these set of Ball/Fish by clicking on "Remove Some" Button</li>
+        </ul>
+        Happy Destruction!!
+        </p>
+        </div>
+        <button id="btn-hide-inst">Hide Instructions</button>
+        <button id="btn-show-inst" style="display: none">Show Instructions</button>
+        <img src='fish.png' id="im1" alt="Image missing" width=10px border="4px" style="display: none">
+        <button id="btn-load">Make Ball</button>
+        <button id="btn-clear">Clear</button>
+        <button id="btn-remove-some">Remove Some</button>
+        <button id="btn-switch-strat">Switch Strategies</button>
+        Choose Type of Ball/Fish
+        <select name="sides" id="sides" onchange="getSides()">
+            <option value="">-Please First Select Type of Ball (Type of Movement will be random-</option>
+            <option value="Square">Square (4 Sided)</option>
+            <option value="Pentagon">Pentagon (5 Sided)</option>
+            <option value="Hexagon">hexagon (6 Sided)</option>
+            <option value="Circle">Circle </option>
+            <option value="Triangle">Triangle (3 Sided)</option>
+            <option value="Fish">Fish</option>
+        </select>
+        Choose Ball/Fish Behavior
+        <select name="strategy" id="strategy" onchange="getStrategy()">
+            <option value="random">Random</option>
+            <option value="vertical">Vertical*</option>
+            <option value="horizontal">Horizontal</option>
+            <option value="diagonal">Diagonal</option>
+            <option value="rotating">Rotating</option>
+            <option value="magic">Magic</option>
+            <option value="pumping">Breathing</option>
+            <option value="lazy">Lazy</option>
+            <option value="Idle">Idle</option>
+            <option value="colorful">ColorFul*</option>
+            <option value="colornsize">ColorFul and Breathing*</option>
+            <option value="sizenrotating">Rotating and Breathing</option>
+            <option value="sizenvelocity">Lazy and Breathing</option>
+            <option value="gravity">Gravity</option>
+            <option value = "gravitynSize">Gravity and Breathing</option>
+        </select>
+        Choose Collision Strategy
+        <select name="colstrategy" id="colstrategy" onchange="getColStrategy()">
+            <option value="random">Random</option>
+            <option value="color">Color</option>
+            <option value="normal">Normal</option>
+            <option value="movement">Movement</option>
+            <option value="velocity">Velocity</option>
+            <option value="eating">Eating</option>
+            <option value="elasticncolor">Normal And Color</option>
+            <option value="elasticnvelocity">Normal And Velocity</option>
+            <option value="elasticnbreathing">Normal And Breathing</option>
+            <option value="elasticngravity">Normal And Gravity</option>
+            <option value="gravitynbreathing">Gravity And Breathing</option>
+            <option value="rock">Rock</option>
+            <option value="magicColStrat">Magic</option>
+        </select>
+        <div name="div-switch">
+            <ul>
+                <li><input type="radio" id="switchable" name="group1" value=true >Switchable</input></li>
+                <li><input type="radio" id="nonswitchable" name="group1" value=false checked>Non-Switchable</input></li>
+            </ul>
+        </div>
+        <div name="div-remove">
+            <ul>
+                <li><input type="radio" id="removeable" name="group2" value=true>Removable</input></li>
+                <li><input type="radio" id="nonremoveable" name="group2" value=false checked>Non-Removable</input></li>
+            </ul>
+        </div>
+        <canvas width="800" height="800" style="border: 1px solid #000000"></canvas>
+    </div>
+</body>
+</html>

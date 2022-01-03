@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/Rice/Coursework/COMP_504/Code_Base/hw4-tanmaymdev/hw4-tanmaymdev/src</OriginalElement>
+  <nodes>
+    <node x="595.0" y="552.0">edu.rice.comp504.adapter.DispatchAdapter</node>
+    <node x="620.0" y="319.0">edu.rice.comp504.model.strategy.ChangeSizeStrategy</node>
+    <node x="1760.0" y="476.0">edu.rice.comp504.model.collisionstrategy.NullStrategy</node>
+    <node x="1.0" y="633.0">edu.rice.comp504.model.cmd.IBallImpl</node>
+    <node x="1065.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ElasticBreathing</node>
+    <node x="162.0" y="162.0">edu.rice.comp504.model.ball.PentagonalBall</node>
+    <node x="707.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ColorStrategy</node>
+    <node x="1236.0" y="319.0">edu.rice.comp504.model.strategy.ChangeSizenRotatingStrategy</node>
+    <node x="195.0" y="476.0">edu.rice.comp504.model.collisionstrategy.EatingStrategy</node>
+    <node x="594.0" y="162.0">edu.rice.comp504.model.ball.TriangleBall</node>
+    <node x="1498.0" y="319.0">edu.rice.comp504.model.strategy.ChangeColorStrategy</node>
+    <node x="739.0" y="162.0">edu.rice.comp504.model.ball.FishBall</node>
+    <node x="2345.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ColStrategyFac</node>
+    <node x="797.0" y="552.0">edu.rice.comp504.model.BallWorldStore</node>
+    <node x="2142.0" y="476.0">edu.rice.comp504.model.collisionstrategy.VelocityStrategy</node>
+    <node x="544.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ElasticStrategy</node>
+    <node x="2035.0" y="319.0">edu.rice.comp504.model.strategy.MagicStrategy</node>
+    <node x="1236.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ElasticVelocityStrategy</node>
+    <node x="172.0" y="319.0">edu.rice.comp504.model.strategy.ChangeColornSizeStrategy</node>
+    <node x="867.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ElasticColorStrategy</node>
+    <node x="2199.0" y="319.0">edu.rice.comp504.model.strategy.GravitySizeStrategy</node>
+    <node x="1606.0" y="476.0">edu.rice.comp504.model.collisionstrategy.ElasticGravity</node>
+    <node x="359.0" y="476.0">edu.rice.comp504.model.collisionstrategy.MagicColStrategy</node>
+    <node x="2539.0" y="476.0">edu.rice.comp504.model.strategy.BallStrategyFac</node>
+    <node x="1045.0" y="319.0">edu.rice.comp504.model.strategy.HorizontalStrategy</node>
+    <node x="1450.0" y="476.0">edu.rice.comp504.model.collisionstrategy.RockStrategy</node>
+    <node x="327.0" y="162.0">edu.rice.comp504.model.ball.CircleBall</node>
+    <node x="1910.0" y="476.0">edu.rice.comp504.model.collisionstrategy.GravityBreathingStrategy</node>
+    <node x="456.0" y="162.0">edu.rice.comp504.model.ball.SquareBall</node>
+    <node x="2589.0" y="319.0">edu.rice.comp504.model.strategy.GravityStrategy</node>
+    <node x="1052.0" y="395.0">edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy</node>
+    <node x="399.25" y="0.0">edu.rice.comp504.model.ball.IBallFac</node>
+    <node x="1707.0" y="319.0">edu.rice.comp504.model.strategy.RotatingStrategy</node>
+    <node x="990.0" y="552.0">edu.rice.comp504.util.RandUtil</node>
+    <node x="820.0" y="319.0">edu.rice.comp504.model.strategy.ChangeVelocityStrategy</node>
+    <node x="415.0" y="319.0">edu.rice.comp504.model.strategy.ChangeSizenVelocity</node>
+    <node x="2548.0" y="395.0">edu.rice.comp504.model.strategy.IStrategyFac</node>
+    <node x="2395.0" y="319.0">edu.rice.comp504.model.strategy.CompositeStrategy</node>
+    <node x="0.0" y="162.0">edu.rice.comp504.model.ball.HexagonalBall</node>
+    <node x="0.0" y="552.0">edu.rice.comp504.model.cmd.IBallCmd</node>
+    <node x="376.0" y="552.0">edu.rice.comp504.model.BallWorldStoreTest</node>
+    <node x="153.0" y="552.0">edu.rice.comp504.controller.BallWorldController</node>
+    <node x="411.75" y="81.0">edu.rice.comp504.model.ball.Ball</node>
+    <node x="1885.0" y="319.0">edu.rice.comp504.model.strategy.NullStrategy</node>
+    <node x="1396.75" y="238.0">edu.rice.comp504.model.strategy.IUpdateStrategy</node>
+    <node x="2343.0" y="395.0">edu.rice.comp504.model.collisionstrategy.IColStrategyFac</node>
+    <node x="0.0" y="319.0">edu.rice.comp504.model.strategy.VerticalStrategy</node>
+    <node x="0.0" y="476.0">edu.rice.comp504.model.collisionstrategy.MovementStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.rice.comp504.model.strategy.RotatingStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1786.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ElasticGravity" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1673.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.RockStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1518.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.PentagonalBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="234.5" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ElasticBreathing" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.FishBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="788.0" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.SquareBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="515.0" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.Ball" target="edu.rice.comp504.model.ball.IBallFac" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.MagicStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2107.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.CircleBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="381.5" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.GravityBreathingStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2016.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.VerticalStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="76.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.HexagonalBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="71.0" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.HorizontalStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1130.5" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.EatingStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="267.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.GravitySizeStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2287.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.NullStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1950.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.MagicColStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="441.5" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ElasticColorStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="956.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.VelocityStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2220.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ball.TriangleBall" target="edu.rice.comp504.model.ball.Ball" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="656.5" y="137.0" />
+      <point x="448.25" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.cmd.IBallImpl" target="edu.rice.comp504.model.cmd.IBallCmd" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeColorStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1592.5" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.MovementStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="87.5" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ColStrategyFac" target="edu.rice.comp504.model.collisionstrategy.IColStrategyFac" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeSizenVelocity" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="507.5" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeSizeStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="710.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ElasticVelocityStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1333.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeColornSizeStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="283.5" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.NullStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1825.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ColorStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="777.0" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.BallStrategyFac" target="edu.rice.comp504.model.strategy.IStrategyFac" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeSizenRotatingStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1357.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.collisionstrategy.ElasticStrategy" target="edu.rice.comp504.model.collisionstrategy.IUpdateColStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="615.5" y="451.0" />
+      <point x="1140.5" y="451.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.CompositeStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2482.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.ChangeVelocityStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="922.5" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.GravityStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2664.0" y="294.0" />
+      <point x="1474.75" y="294.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.45300833635375126" showDependencies="false" x="641.9568748249792" y="253.32024761631686" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
